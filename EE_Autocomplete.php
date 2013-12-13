@@ -1,7 +1,7 @@
 <?php
 /**
  * @license     MIT
- * @copyright   Copyright (c) 2012 Jeremy Cloutier
+ * @copyright   Copyright (c) 2013 Jeremy Cloutier
  * @author      Jeremy Cloutier
  * @package     EE_Autocomplete
  * @version     Version 1.0
@@ -41,7 +41,7 @@ class EE_Autocomplete_user {
  ***********************************************************************/
 
 /**
- * Code Completion for Netbeans 7+
+ * Code Completion for Netbeans 7+ and PHPStorm 7+
  *
  *
  * ================================================
@@ -68,31 +68,36 @@ class EE_Autocomplete_user {
  * @property EE_Table $table
  * @property EE_Typography $typography
  * @property EE_Upload $upload
- * @property EE_Xmlrpc $xmlrpc
  * @property EE_Extensions $extensions
  * @property File_field $file_field
  * @property File_integrity $file_integrity
  * @property Filemanager $filemanager
  * @property EE_Functions $functions
+ * @property Grid_parser $grid_parser
  * @property EE_Html_buttons $html_buttons
+ * @property Javascript_loader $javascript_loader
+ * @property EE_Lang $lang
  * @property Layout $layout
- * @property EE_Localize $localize
+ * @property Localize $localize
  * @property EE_Logger $logger
  * @property Members $members
  * @property EE_Menu $menu
  * @property EE_Messages $messages
  * @property EE_Messages_send $messages_send
+ * @property Newrelic $newrelic
  * @property Notifications $notifications
  * @property Publish $publish
  * @property EE_Referrer $referrer
+ * @property EE_Relationships_parser $relationships_parser
  * @property Remember $remember
  * @property Services_JSON $services_json
  * @property EE_Session $session
+ * @property Smartforge $smartforge
  * @property EE_Spellcheck $spellcheck
  * @property EE_Stats $stats
  * @property EE_Stylesheet $stylesheet
  * @property EE_Subscription $subscription
- * @property EE_Template $template
+ * @property EE_Template $TMPL
  * @property EE_Throttling $throttling
  * @property Utf8_db_convert $utf8_db_convert
  * @property EE_Validate $validate
@@ -115,11 +120,16 @@ class EE_Autocomplete_user {
  * @property File_category_model $file_category_model
  * @property File_model $file_model
  * @property File_upload_preferences_model $file_upload_preferences_model
+ * @property Grid_model $grid_model
  * @property Language_model $language_model
  * @property Layout_model $layout_model
+ * @property Member_field_model $member_field_model
+ * @property Member_group_model $member_group_model
  * @property Member_model $member_model
+ * @property Relationship_model $relationship_model
  * @property Search_model $search_model
  * @property Site_model $site_model
+ * @property Snippet_model $snippet_model
  * @property Status_model $status_model
  * @property Super_model $super_model
  * @property Template_model $template_model
@@ -155,7 +165,7 @@ class EE_Autocomplete_user {
  * @property CI_Router $router
  * @property CI_Security $security
  * @property CI_Session $session
- * @property CI_Sha1 $sha1
+ * @property CI_Sha $sha
  * @property CI_Table $table
  * @property CI_Trackback $trackback
  * @property CI_Typography $typography
@@ -164,7 +174,6 @@ class EE_Autocomplete_user {
  * @property CI_URI $uri
  * @property CI_User_agent $user_agent
  * @property CI_Utf8 $utf8
- * @property CI_Validation $validation
  * @property CI_Xmlrpc $xmlrpc
  * @property CI_Xmlrpcs $xmlrpcs
  * @property CI_Zip $zip
